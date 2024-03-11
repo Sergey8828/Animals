@@ -1,0 +1,38 @@
+﻿<Window x:Class="Project_Animals.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_Animals"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="900"
+        Loaded="Window_loaded">
+    <Grid Background="Brown">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="159*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="89*"/>
+            
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Width="772" Grid.ColumnSpan="2">
+            <Image Source="/Images/a.png" Width="30" Height="50" Margin="10,10,10,10"/>
+            <Label Content="All Animals" FontSize="20" Foreground="Blue" Margin="12" Height="50" Width="140" HorizontalContentAlignment="Left" FontWeight="Bold" />
+            <RadioButton GroupName="AnimalType" Tag="All" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Image Source="/Images/carnivore.png" Width="30" Height="50" Margin="10,10,10,10"/>
+            <Label Content="Carnivores" FontSize="24" Foreground="Red" Margin="12" Height="50" Width="140" FontWeight="Bold"/>
+            <RadioButton GroupName="AnimalType" Tag="Carnivore" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Image Source="/Images/herbivore.png" Width="30" Height="50" Margin="10,10,10,10"/>
+            <Label Content="Herbivores" FontSize="20" Foreground="LawnGreen" Margin="12" Height="50" Width="140" FontWeight="Bold"/>
+            <RadioButton GroupName="AnimalType" Tag="Herbivore" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <ListBox x:Name="lbxAnimals" BorderBrush="Brown" Grid.Row="1" Background="Brown" Grid.Column="0" Margin="40,20,40,40" SelectionChanged="lbxAnimals_SelectionChanged" FontSize="16" FontWeight="Bold"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Width="430" HorizontalAlignment="Right">
+            <Image x:Name="imgDetailsAnimal" Height="100" Width="156" Margin="10,10,20,0"  />
+        <TextBlock Name="tblkDetails" Width="400" Height="190" HorizontalAlignment="Right" Margin="10" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14"/>
+        </StackPanel>
+    </Grid>
+</Window>
