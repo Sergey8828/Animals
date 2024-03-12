@@ -18,17 +18,17 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Width="772" Grid.ColumnSpan="2">
             <Image Source="/Images/a.png" Width="30" Height="50" Margin="10,10,10,10"/>
-            <Label Content="All Animals" FontSize="20" Foreground="Blue" Margin="12" Height="50" Width="140" HorizontalContentAlignment="Left" FontWeight="Bold" />
-            <RadioButton GroupName="AnimalType" Tag="All" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center" />
-            <Image Source="/Images/carnivore.png" Width="30" Height="50" Margin="10,10,10,10"/>
+            <Label Content="All Animals" FontSize="24" Foreground="Blue" Margin="12" Height="50" Width="140" HorizontalContentAlignment="Left" FontWeight="Bold" />
+            <RadioButton GroupName="AnimalType" Tag="All" Checked="Radiobtn_Checked" Margin="-5,20" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Image Source="/Images/carnivore.png" Width="30" Height="50" Margin="30,10,10,10"/>
             <Label Content="Carnivores" FontSize="24" Foreground="Red" Margin="12" Height="50" Width="140" FontWeight="Bold"/>
-            <RadioButton GroupName="AnimalType" Tag="Carnivore" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton GroupName="AnimalType" Tag="Carnivore" Margin="-10" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Image Source="/Images/herbivore.png" Width="30" Height="50" Margin="10,10,10,10"/>
             <Label Content="Herbivores" FontSize="20" Foreground="LawnGreen" Margin="12" Height="50" Width="140" FontWeight="Bold"/>
-            <RadioButton GroupName="AnimalType" Tag="Herbivore" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton GroupName="AnimalType" Tag="Herbivore" Margin="-25" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </StackPanel>
 
-        <ListBox x:Name="lbxAnimals" BorderBrush="Brown" Grid.Row="1" Background="Brown" Grid.Column="0" Margin="40,20,40,40" SelectionChanged="lbxAnimals_SelectionChanged" FontSize="16" FontWeight="Bold"/>
+        <ListBox x:Name="lbxAnimals" BorderBrush="Brown" Grid.Row="1" Background="Brown" Grid.Column="0" Margin="40,20,40,40" SelectionChanged="lbxAnimals_SelectionChanged" Width="200" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold"/>
 
         <StackPanel Grid.Row="1" Grid.Column="0" Width="430" HorizontalAlignment="Right">
             <Image x:Name="imgDetailsAnimal" Height="100" Width="156" Margin="10,10,20,0"  />
