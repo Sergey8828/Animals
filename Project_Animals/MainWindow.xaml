@@ -24,7 +24,7 @@
             <Label Content="Carnivores" FontSize="24" Foreground="Red" Margin="12" Height="50" Width="140" FontWeight="Bold"/>
             <RadioButton GroupName="AnimalType" Tag="Carnivore" Margin="-10" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Image Source="/Images/herbivore.png" Width="30" Height="50" Margin="10,10,10,10"/>
-            <Label Content="Herbivores" FontSize="20" Foreground="LawnGreen" Margin="12" Height="50" Width="140" FontWeight="Bold"/>
+            <Label Content="Herbivores" FontSize="24" Foreground="LawnGreen" Margin="12" Height="50" Width="140" FontWeight="Bold"/>
             <RadioButton GroupName="AnimalType" Tag="Herbivore" Margin="-25" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </StackPanel>
 
