@@ -28,6 +28,8 @@
             <RadioButton GroupName="AnimalType" Tag="Herbivore" Margin="-25" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </StackPanel>
 
+        <Image Source="/Images/animals.jpg" Width="30" Height="50" Margin="30,10,10,10"/>
+
         <ListBox x:Name="lbxAnimals" BorderBrush="Brown" Grid.Row="1" Background="Brown" Grid.Column="0" Margin="40,20,40,40" SelectionChanged="lbxAnimals_SelectionChanged" Width="200" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold"/>
 
         <StackPanel Grid.Row="1" Grid.Column="0" Width="430" HorizontalAlignment="Right">

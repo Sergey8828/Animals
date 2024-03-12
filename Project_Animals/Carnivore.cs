@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_Animals
 {
-    public class Carnivore : Animal
+    public abstract class Carnivore : Animal
     {
         public string KillsWith { get; set; }
         public Carnivore()

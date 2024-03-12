@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Project_Animals
 {
     
-    public class Herbivore : Animal
+    public abstract class Herbivore : Animal
     {
         public double FoodKgPerWeightKg { get; set; }
 

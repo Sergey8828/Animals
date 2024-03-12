@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_Animals
 {
-    public class Animal
+    public abstract class Animal
     {
         public string Continent { get; set; }
         public string Description { get; set; }

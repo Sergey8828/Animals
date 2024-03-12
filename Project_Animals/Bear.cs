@@ -21,15 +21,7 @@ namespace Project_Animals
         }
         public override string GetDetail()
         {
-            string temp;
-            if (Endangered)
-            {
-                temp = "Yes";
-            }
-            else
-            {
-                temp = "No";
-            }
+            string temp = Endangered ? "yes" : "no";
             return base.GetDetail() + string.Format($"Endangered: {temp}");
         }
     }
