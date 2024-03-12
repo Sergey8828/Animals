@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project_Animals"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="900"
+        Title="MainWindow" Height="550" Width="900"
         Loaded="Window_loaded">
     <Grid Background="Brown">
         <Grid.RowDefinitions>
@@ -25,16 +25,16 @@
             <RadioButton GroupName="AnimalType" Tag="Carnivore" Margin="-10" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Image Source="/Images/herbivore.png" Width="30" Height="50" Margin="10,10,10,10"/>
             <Label Content="Herbivores" FontSize="24" Foreground="LawnGreen" Margin="12" Height="50" Width="140" FontWeight="Bold"/>
-            <RadioButton GroupName="AnimalType" Tag="Herbivore" Margin="-25" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton GroupName="AnimalType" Tag="Herbivore" Margin="-10" Checked="Radiobtn_Checked" FlowDirection="LeftToRight" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </StackPanel>
 
-        <Image Source="/Images/animals.jpg" Width="30" Height="50" Margin="30,10,10,10"/>
+        <Image Source="/Images/animals.jpg" Width="300"  Grid.Row="1" VerticalAlignment="Top" Height="250" Margin="-40,10,10,10"/>
 
-        <ListBox x:Name="lbxAnimals" BorderBrush="Brown" Grid.Row="1" Background="Brown" Grid.Column="0" Margin="40,20,40,40" SelectionChanged="lbxAnimals_SelectionChanged" Width="200" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold"/>
+        <ListBox x:Name="lbxAnimals" BorderBrush="Brown" Grid.Row="1" Background="Brown" Grid.Column="0" VerticalAlignment="Center" Margin="20"  SelectionChanged="lbxAnimals_SelectionChanged" Width="200" Height="200" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold"/>
 
         <StackPanel Grid.Row="1" Grid.Column="0" Width="430" HorizontalAlignment="Right">
             <Image x:Name="imgDetailsAnimal" Height="100" Width="156" Margin="10,10,20,0"  />
-        <TextBlock Name="tblkDetails" Width="400" Height="190" HorizontalAlignment="Right" Margin="10" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14"/>
+        <TextBlock Name="tblkDetails" Width="400" Height="130"   Grid.Row="1" TextWrapping="Wrap" Margin="0, 120, 10, 0" FontWeight="Bold" FontSize="14"/>
         </StackPanel>
     </Grid>
 </Window>
