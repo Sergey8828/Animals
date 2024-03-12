@@ -31,7 +31,7 @@ namespace Project_Animals
 
         public override string ToString()
         {
-            return string.Format($"{this.GetType().Name} - {Name}");
+            return string.Format($"{this.GetType().Name.ToUpper()} - {Name}");
         }
         public virtual string GetDetail()
         {
